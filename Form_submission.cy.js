@@ -7,6 +7,9 @@ describe('XPathLocators',() =>{
         cy.get("//div[@class='MocG8c HZ3kWc mhLiyf LMgvRb KKjvXb DEh1R']").click()
         cy.ge("//div[@class='MocG8c HZ3kWc mhLiyf OIC90c LMgvRb']").contains('yes').click()
         cy.get("//span[@class='NPEfkd RveJvd snByac']").contains('Submit').click()
+        cy.wait(3000)
+        cy.get("Your response has been recorded").should('be.visible');
+        
         
 
 
